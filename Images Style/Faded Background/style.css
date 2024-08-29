@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.75s;
+}
+
+body {
+  background: #241a1a;
+}
+
+.container {
+  width: 30vw;
+  height: 45vh;
+  top: 50vh;
+  left: 50vw;
+  display: flex;
+  transform: translate(-50%, -50%);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  background-image: url("place1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.content {
+  color: white;
+  margin-left: 10px;
+  bottom: -200px;
+  position: absolute;
+}
+
+.card:hover{
+    border-image: fill 0 linear-gradient(#0000, #0009);
+
+}
+
+.card:hover .content {
+  bottom: 20px;
+}

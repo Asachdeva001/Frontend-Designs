@@ -1,0 +1,102 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+transition: all 0.2s linear;
+}
+
+
+body{
+    background: rgb(82, 69, 69);
+    display: flex;
+}
+
+.container{
+    width: 150px;
+    height: 350px;
+    top: 50vh;
+    left: 50vw;
+    background: rgb(55, 55, 67);
+    display: flex;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    position: relative;
+    border: 4px solid white;
+    border-radius: 30px;
+}
+
+.container ul{
+    list-style-type: none;
+}
+
+.cont{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 0px 15px 15px 0px;
+    background: rgb(37, 35, 35);
+    margin: 5px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont a{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    justify-self: end;
+    background: black;
+    border-radius: 100%;
+    position: relative;
+    display: grid;
+    margin: 0px 3px;
+    place-items: center;
+}
+
+.cont a .icon{
+    font-size: 24px;
+}
+
+.cont .text{
+    display: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 1px;
+    font-size: 16px;
+}
+
+.cont:hover{
+    width: 130px;
+}
+.cont:hover .text{
+    display: flex;
+}
+
+.cont:hover a{
+    background: white;
+}
+
+.cont:hover .i{
+    background: linear-gradient(to bottom right, purple,magenta,red,orange,yellow);
+    color: transparent;
+    --webkit-background-clip: text;
+    background-clip: text;
+}
+
+.cont:hover .l{
+    color: #0077b5;
+}
+
+.cont:hover .g{
+    color: #171515;
+}
+
+.cont:hover .t{
+    color: black;
+}
+
+.cont:hover .te{
+    color: #33AAE2;
+}

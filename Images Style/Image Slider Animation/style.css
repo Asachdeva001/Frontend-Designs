@@ -1,0 +1,40 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(77, 66, 66);
+}
+
+.cont{
+    width: 40vw;
+    height: 50vh;
+    background-size: 100%;
+    top: 50vh;
+    left: 50vw;
+    position: relative;
+    transform: translate(-50%,-50%);
+    box-shadow: 20px 20px 40px black;
+    animation: Slider 15s linear infinite;
+}
+
+@keyframes Slider {
+    0%{
+        background: url(place1.jpg);
+    }
+    25%{
+        background: url(place2.jpg);
+    }
+    50%{
+        background: url(place3.jpg);
+    }
+    75%{
+        background: url(place4.jpg);
+    }
+    100%{
+        background: url(place5.jpg);
+    }
+}
